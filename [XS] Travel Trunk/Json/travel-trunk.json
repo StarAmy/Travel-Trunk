@@ -1,0 +1,66 @@
+{
+  "Changes": [
+    // Load Texture
+    {
+      "Action": "Load",
+      "Target": "StarAmy.Trunk/TravelTrunkLeft",
+      "FromFile": "assets/travel-trunk-left.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "StarAmy.Trunk/TravelTrunkRight",
+      "FromFile": "assets/travel-trunk-right.png"
+    },
+
+    // Load Storage Data
+    {
+      "Action": "EditData",
+      "Target": "furyx639.ExpandedStorage/Storages",
+      "Entries": {
+        "TravelTrunkLeft": {
+          "DisplayName": "{{i18n: travel-trunk-left.name}}",
+          "Description": "{{i18n: travel-trunk-left.description}}",
+          "Image": "StarAmy.Trunk/TravelTrunkLeft",
+          "PlayerColor": false,
+          "OpenSound": "doorCreak",
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "furyx639.ExpandedStorage/Storages",
+      "Entries": {
+        "TravelTrunkRight": {
+          "DisplayName": "{{i18n: travel-trunk-right.name}}",
+          "Description": "{{i18n: travel-trunk-right.description}}",
+          "Image": "StarAmy.Trunk/TravelTrunkRight",
+          "PlayerColor": false,
+          "OpenSound": "doorCreak",
+        }
+      }
+    },
+    // Add Buyable
+    {
+      "Action": "EditData",
+      "Target": "furyx639.ExpandedStorage/Buy",
+      "Entries": {
+        "TravelTrunkLeft": {
+          "ShopID": "Carpenter",
+          "Price": 1000,
+          "IsRecipe": false
+        }
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "furyx639.ExpandedStorage/Buy",
+      "Entries": {
+        "TravelTrunkRight": {
+          "ShopID": "Carpenter",
+          "Price": 1000,
+          "IsRecipe": false
+        }
+      }
+    }
+  ] 
+}

@@ -1,0 +1,17 @@
+﻿{
+	"Name": "Travel Trunk",
+	"Author": "StarAmy",
+	"Version": "1.0.0",
+	"Description": "Adds a two-part functional luggage trunk.",
+	"UniqueID": "StarAmy.Trunk",
+	"Dependencies": [
+		{
+			"UniqueID": "furyx639.ExpandedStorage",
+			"IsRequired": true,
+			"MinimumVersion": "2.0.0"
+		}
+	],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
